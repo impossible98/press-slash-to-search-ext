@@ -10,8 +10,13 @@ export default defineConfig({
       entry: 'src/main.tsx',
       userscript: {
         icon: 'https://vitejs.dev/logo.svg',
-        namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.google.com/'],
+        namespace: 'impossible98/press-slash-to-search',
+        match: ['https://search.bilibili.com/all*'],
+        name: 'Press Slash to Search',
+        description: 'After pressing slash, you can enter the search input',
+        author: 'impossible98',
+        license: 'MIT',
+        version: '0.1.0',
       },
       build: {
         externalGlobals: {

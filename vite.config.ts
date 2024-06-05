@@ -11,7 +11,7 @@ export default defineConfig({
       userscript: {
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'impossible98/press-slash-to-search',
-        match: ['https://search.bilibili.com/all*'],
+        match: ['https://search.bilibili.com/all*', 'https://www.douyin.com/*'],
         name: 'Press Slash to Search',
         description: 'After pressing slash, you can enter the search input',
         author: 'impossible98',

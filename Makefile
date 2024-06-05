@@ -3,13 +3,14 @@ build:
 	yarn run build
 dev:
 	yarn run dev
+env:
+	asdf install
 fmt:
 	yarn run format
 fix:
 	yarn run format:fix
 install:
+	node --version
 	yarn install --frozen-locakfile
-tag:
-	bash ./scripts/tag.sh
-push:
+push: build
 	git push origin --tags
